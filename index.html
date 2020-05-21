@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <h1 id = "title">Welcome to the Library!</h1>
+        <div id = "modal">
+            <div id = "modal_content">
+                <span id = "close"> &times; </span>
+                <fieldset > 
+                    <legend style = "padding-bottom: 10px;">Book Info</legend>
+                    <form id = "book_form">
+                        <label for = "book_title">Book Title</label>
+                        <input required placeholder = "Enter Book Title" type = "text" id = "book_title" name = "title"> <br> <br>
+                        <label for = "author">Author</label>
+                        <input required placeholder = "Enter Author" type = "text" id = "author" name = "author"> <br> <br>
+                        <label for = "page_numbers">Page Number</label>
+                        <input required type = "number" min = "1" id = "pages" name = "pages"> <br> <br>
+                        <label for = "read">Read</label>
+                        <input required type = "radio" id = "read" name = "read" value = "yes">
+                        <label for = "unread">Unread</label>
+                        <input required type = "radio" id = "unread" name = "read" value = "no"> <br> <br>
+                        <button type = "submit">Submit</button>
+                        <button type = "button" id = "close_btn">Cancel</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div id = "bookshelf">
+            <h2 id = "subtitle">Books</h2>
+            <button id = "add_book" type = "button">Add Book</button>
+            <div class = "shelf_bar"></div>
+            <div id = "shelf"></div>
+
+        </div>
+
+        <!--
+        <div class = "book">
+            <div id = "spine"></div>
+            <div id = "front">
+                <div class = "info">
+                    <h3>The Hobbit</h3>
+                    <h3>HP Lovecrafffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffft</h3>
+                    <h3>1153</h3>
+                    <h3 class = "read">Read</h3>
+                    <h3 class = "delete">X</h3>
+                </div>
+            </div>
+        </div>
+        -->
+
+    </body>
+    <script src = "modal.js"></script>
+    <script src = "books.js"></script>
+</html>
